@@ -1,4 +1,4 @@
-To access the code, please download all 3 files into one folder. Then, you can simply open up any file in a code editor. To see the project and click around, please open up the chrome HTML Doc in any chrome window.
+To access the code, please download all 3 files into one folder. To see the project and click around, please open up the chrome HTML Doc in any chrome window. 
 
 In this folder there is a simple library exercise that I completed using vanilla javascript.
 In this library, users can:
