@@ -1,9 +1,3 @@
-/* E2 Library - JS */
-
-/*-----------------------------------------------------------*/
-/* Starter code - DO NOT edit the code below. */
-/*-----------------------------------------------------------*/
-
 // global counts
 let numberOfBooks = 0; // total number of books
 let numberOfPatrons = 0; // total number of patrons
@@ -28,7 +22,7 @@ class Book {
 	setLoanTime() {
 		// Create a setTimeout that waits 3 seconds before indicating a book is overdue
 
-		const self = this; // keep book in scope of anon function (why? the call-site for 'this' in the anon function is the DOM window)
+		const self = this;
 		setTimeout(function () {
 
 			console.log('overdue book!', self.title)
@@ -63,7 +57,7 @@ libraryBooks[0].patron = patrons[0]
 libraryBooks[0].setLoanTime()  // check console to see a log after 3 seconds
 
 
-/* Select all DOM form elements you'll need. */
+/* Select all DOM form elements needed. */
 const bookAddForm = document.querySelector('#bookAddForm');
 const bookInfoForm = document.querySelector('#bookInfoForm');
 const bookLoanForm = document.querySelector('#bookLoanForm');
@@ -86,17 +80,6 @@ bookInfoForm.addEventListener('submit', getBookInfo);
 /* Listen for click patron entries - will have to check if it is a return button in returnBookToLibrary */
 patronEntries.addEventListener('click', returnBookToLibrary)
 
-/*-----------------------------------------------------------*/
-/* End of starter code - do *not* edit the code above. */
-/*-----------------------------------------------------------*/
-
-
-/** ADD your code to the functions below. DO NOT change the function signatures. **/
-
-
-/*** Functions that don't edit DOM themselves, but can call DOM functions 
-	 Use the book and patron arrays appropriately in these functions.
- ***/
 
 // Adds a new book to the global book list and calls addBookToLibraryTable()
 function addNewBookToBookList(e) {
@@ -198,10 +181,6 @@ function getBookInfo(e) {
 
 }
 
-
-/*-----------------------------------------------------------*/
-/*** DOM functions below - use these to create and edit DOM objects ***/
-
 // Adds a book to the library table.
 function addBookToLibraryTable(book) {
 
@@ -226,7 +205,7 @@ function addBookToLibraryTable(book) {
 
 	document.getElementById('bookTable').appendChild(tableRow);
 
-	// Add code here
+
 
 }
 
@@ -246,7 +225,6 @@ function displayBookInfo(book) {
 }
 
 // Adds a book to a patron's book list with a status of 'Within due date'. 
-// (don't forget to add a 'return' button).
 function addBookToPatronLoans(book) {
 
 
@@ -341,8 +319,6 @@ function addNewPatronEntry(patron) {
 
 
 
-	// Add code here
-
 }
 
 
@@ -402,7 +378,6 @@ function changeToOverdue(book) {
 
 
 
-	// Add code here
 
 }
 
